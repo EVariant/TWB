@@ -4,6 +4,18 @@ using UnityEngine;
 
 public class UiMgr : MonoBehaviour
 {
+    public UI_StartMenu startMenu;
+    public UI_Battle ui_Battle;
+
+
+    private void Awake()
+    {
+        startMenu.Init();
+        ui_Battle.Init();
+
+
+
+    }
     // Start is called before the first frame update
     void Start()
     {

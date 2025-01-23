@@ -1,23 +1,25 @@
-using Newtonsoft.Json.Converters;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameMgr : MonoBehaviour
+public class UI_Battle : MonoBehaviour
 {
-    public Scene_Battle scene_Battle;
 
 
-    private void Awake()
+    public void Init()
     {
-        scene_Battle.Init();
-
-
-
-
+        Hide();
     }
 
+    public void Show()
+    {
+        gameObject.SetActive(true);
+    }
 
+    public void Hide()
+    {
+        gameObject.SetActive(false);
+    }
     // Start is called before the first frame update
     void Start()
     {
