@@ -5,11 +5,14 @@ using UnityEngine;
 
 public class GameMgr : MonoBehaviour
 {
+    public static GameMgr I;
     public Scene_Battle scene_Battle;
 
 
     private void Awake()
     {
+        I = this;
+
         scene_Battle.Init();
 
 

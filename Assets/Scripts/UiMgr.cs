@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class UiMgr : MonoBehaviour
 {
-    public UI_StartMenu startMenu;
+    public UI_StartMenu ui_StartMenu;
     public UI_Battle ui_Battle;
 
 
     private void Awake()
     {
-        startMenu.Init();
+        ui_StartMenu.Init();
         ui_Battle.Init();
 
 
